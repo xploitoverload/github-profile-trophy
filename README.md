@@ -21,6 +21,43 @@
   </a>
 </div>
 
+> ⚠️ **Notice from the Project Owner**
+>
+> Hello everyone,\
+> I am the owner of this project.
+>
+> Currently, due to the increase in users and traffic, the cost of maintaining
+> this service has become quite high, and it is becoming financially difficult
+> to sustain.\
+> As costs continue to rise, there is a possibility that the service may have to
+> be discontinued.\
+> We are now at a stage where monetization and financial support are essential.
+>
+> Your support in the following ways would be greatly appreciated:
+>
+> 1. Financial support: [GitHub Sponsors](https://github.com/sponsors/ryo-ma)
+> 2. Reducing server load through self-hosting (by forking on GitHub and
+>    deploying to Vercel)
+> 3. Share your github-profile-trophy URL deployed to Vercel for load balancing
+>    (Send email: saka_ro@yahoo.co.jp or Pull Request)
+
+# Load balancing endpoints
+
+These are endpoints provided by volunteers. Please use these in moderation.
+
+- [https://github-profile-trophy-liard-delta.vercel.app](https://github-profile-trophy-liard-delta.vercel.app/)
+  by [Adwitya](https://github.com/Adwitya)
+- [https://github-profile-trophy-fork-two.vercel.app](https://github-profile-trophy-fork-two.vercel.app)
+  by [hesreallyhim](https://github.com/hesreallyhim)
+- [https://github-profile-trophy-winning.vercel.app](https://github-profile-trophy-winning.vercel.app)
+  by [hongbo-wei](https://github.com/hongbo-wei)
+- [https://github-profile-trophy-kannan.vercel.app](https://github-profile-trophy-kannan.vercel.app)
+  by [kann4n](https://github.com/kann4n)
+- [https://trophy.ryglcloud.net](https://trophy.ryglcloud.net)
+  by [PracticalRyan](https://github.com/PracticalRyan)
+- [https://github-profile-trophy-tawny.vercel.app](https://github-profile-trophy-tawny.vercel.app)
+  by [vijaypurohit322](https://github.com/vijaypurohit322)
+
 # Quick Start
 
 Add the following code to your readme. When pasting the code into your profile's
@@ -533,6 +570,34 @@ https://github-profile-trophy.vercel.app/?username=ryo-ma&no-frame=true
   <img width="936" src="https://github.com/user-attachments/assets/54de15a3-d907-4a50-8117-170aae74d1cd">
 </p>
 
+## Generate an svg file localy
+
+Using the render_svg.ts script you can generate your trophys as an svg file
+given your username, (Enviroment Vars: See [env-example](env-example)).
+
+Usage:
+
+```bash
+deno run --allow-net --allow-env --allow-read --allow-write ./render_svg.ts USERNAME OUTPUT_DIR THEME
+```
+
+## Generate an svg inside Github CI (Workflow)
+
+Using the provided github action you can easly generate the trophy inside an
+github workflow. This eliminates the needs of an online service running but you
+have to manualy update rerun the action to update the file.
+
+Usage:
+
+```yaml
+- name: Generate trophy
+  uses: Erik-Donath/github-profile-trophy@feature/generate-svg
+  with:
+    username: your-username
+    output_path: trophy.svg
+    token: ${{ secrets.GITHUB_TOKEN }}
+```
+
 # Contribution Guide
 
 Check [CONTRIBUTING.md](./CONTRIBUTING.md) for more details.
@@ -541,3 +606,47 @@ Check [CONTRIBUTING.md](./CONTRIBUTING.md) for more details.
 
 This product is licensed under the
 [MIT License](https://github.com/ryo-ma/github-profile-trophy/blob/master/LICENSE).
+
+# 🙏 Sponsors
+
+Thank you so much to all the amazing sponsors who support this project! Your
+contributions help keep development going and make this work possible.
+
+## 💖 Monthly Sponsors
+
+- [@Leay15](https://github.com/Leay15) - $10 / month
+- [@hesreallyhim](https://github.com/hesreallyhim) - $10 / month
+- [@pmsosa](https://github.com/pmsosa) — $10 / month
+- [@chenfeng-huang](https://github.com/chenfeng-huang) — $10 / month
+- [@holly-hacker](https://github.com/holly-hacker) — $2 / month
+- [@skillerious](https://github.com/skillerious) — $2 / month (since Aug
+  17, 2024)
+- [@LudovicGardy](https://github.com/LudovicGardy) — $10 / month (since Aug
+  15, 2024)
+- [@alexcastrodev](https://github.com/alexcastrodev) — $10 / month (since Oct
+  13, 2023, previously $50 / month)
+- [@great-work-told-is](https://github.com/great-work-told-is) — $10 / month
+  (since Apr 12, 2023)
+- [@Ilithy](https://github.com/Ilithy) — $5 / month (since Jul 21, 2022)
+- [@weakish](https://github.com/weakish) — $2 / month (since Jan 22, 2022)
+- [@Kazuhito00](https://github.com/Kazuhito00) — $2 / month (since Jan 19, 2022)
+- [@KATO-Hiro](https://github.com/KATO-Hiro) — $2 / month (since Jan 5, 2022)
+- [@batazor](https://github.com/batazor) — $2 / month (since Oct 28, 2021)
+- [@port19x](https://github.com/port19x) — $2 / month (since Jan 27, 2022)
+
+## 🎁 One-Time Sponsors
+
+- [@pronoym99](https://github.com/pronoym99) - $20 (Feb 8, 2026)
+- [@hesreallyhim](https://github.com/hesreallyhim) - $100 (Jan 11, 2026)
+- [@Seo-4d696b75](https://github.com/Seo-4d696b75) — $10 (Jan 4, 2026)
+- [@massif-01](https://github.com/massif-01) — $5 (December 17, 2025)
+- [@tapegram](https://github.com/tapegram) — $20 (December 6, 2025)
+- [@WilliamCorotan](https://github.com/WilliamCorotan) — $5 (November 5, 2025)
+- [@arnabnandy7](https://github.com/arnabnandy7) — $10 (Oct 3, 2025)
+- [@JoqarSabon](https://github.com/JoqarSabon) — $5 (May 24, 2024)
+- [@syaghoubi00](https://github.com/syaghoubi00) — $5 (Jan 28, 2024)
+- [@pylapp](https://github.com/pylapp) — $20 (Jan 15, 2024)
+- [@Dobefu](https://github.com/Dobefu) — $10 (Dec 22, 2024)
+- [@michele-lorenzoni](https://github.com/michele-lorenzoni) — $10 (Nov
+  26, 2024)
+- [@skillerious](https://github.com/skillerious) — $10 (Aug 17, 2024)
